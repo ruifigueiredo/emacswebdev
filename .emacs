@@ -1,6 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/eproject")
 (require 'eproject)
 (require 'eproject-extras)
+(require 'darkroom-mode)
 
 (autoload 'geben "geben" "DBGp protocol front-end" t)
 (add-to-list 'load-path "~/.emacs.d")
