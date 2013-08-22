@@ -11,6 +11,8 @@ Debian 7.1
 
 PHP 5.4.4-14+deb7u3 
 
+Emacs Goodies
+
 Emacs 23.4.1
 
 
