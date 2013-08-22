@@ -1,7 +1,21 @@
 (add-to-list 'load-path "~/.emacs.d/eproject")
 (require 'eproject)
 (require 'eproject-extras)
-(require 'darkroom-mode)
+
+ (defun darkroom-mode ()
+   "Make things simple-looking by removing decoration 
+ and choosing a simple theme."
+        (interactive)
+        (switch-full-screen 1)     ;; requires above function 
+	(color-theme-retro-green)  ;; requires color-theme
+        (setq left-margin 10)
+        (menu-bar-mode -1)
+        (tool-bar-mode -1)
+        (scroll-bar-mode -1)
+        (set-face-foreground 'mode-line "gray15")
+        (set-face-background 'mode-line "black")
+        (auto-fill-mode 1))
+
 
 (autoload 'geben "geben" "DBGp protocol front-end" t)
 (add-to-list 'load-path "~/.emacs.d")
